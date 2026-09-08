@@ -1,39 +1,39 @@
-```
-# Build artifacts
+# Icons and resources
+*.ico
+
+# Build outputs
 bin/
 obj/
+Debug/
+Release/
+x64/
+x86/
 *.exe
 *.dll
 *.pdb
-*.nupkg
 *.userprefs
 
 # Dependencies
 packages/
-node_modules/
 
 # Logs
 *.log
 
+# Temp files
+*.tmp
+*.temp
+
 # User-specific files
-.vs/
 *.user
 *.suo
-*.userosscache
-*.sln.docstates
-
-# Environment specific settings
-.env
-.env.local
-*.env.*
+.vs/
+.userprefs
 
 # OS generated files
 .DS_Store
 Thumbs.db
-ehthumbs.db
-Icon?
 desktop.ini
 
-# Testing
-TestResults/
-```
+# Configuration files that might contain secrets
+.config/dotnet-tools.json
+publish/

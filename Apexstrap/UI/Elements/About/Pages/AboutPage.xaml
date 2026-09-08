@@ -16,7 +16,7 @@
       Scrollable="True">
 
     <ui:UiPage.Resources>
-        <Storyboard x:Key="EggStoryboard">
+        <Storyboard x:Key="EggStoryboard" Freezable="True">
             <DoubleAnimation Storyboard.TargetName="Image1" Storyboard.TargetProperty="Opacity" From="1.0" To="0.0" Duration="0:0:3" />
             <DoubleAnimation Storyboard.TargetName="Image2" Storyboard.TargetProperty="Opacity" From="0.0" To="1.0" Duration="0:0:3" />
         </Storyboard>
@@ -27,7 +27,7 @@
                 <Trigger Property="IsMouseOver" Value="True">
                     <Trigger.EnterActions>
                         <BeginStoryboard>
-                            <Storyboard>
+                            <Storyboard Freezable="True">
                                 <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1.05" Duration="0:0:0.15" />
                                 <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1.05" Duration="0:0:0.15" />
                             </Storyboard>
@@ -35,7 +35,7 @@
                     </Trigger.EnterActions>
                     <Trigger.ExitActions>
                         <BeginStoryboard>
-                            <Storyboard>
+                            <Storyboard Freezable="True">
                                 <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1" Duration="0:0:0.15" />
                                 <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1" Duration="0:0:0.15" />
                             </Storyboard>
@@ -56,7 +56,7 @@
                 <Trigger Property="IsMouseOver" Value="True">
                     <Trigger.EnterActions>
                         <BeginStoryboard>
-                            <Storyboard>
+                            <Storyboard Freezable="True">
                                 <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1.05" Duration="0:0:0.15" />
                                 <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1.05" Duration="0:0:0.15" />
                                 <ColorAnimation Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" To="#FF6200EE" Duration="0:0:0.15" />
@@ -65,7 +65,7 @@
                     </Trigger.EnterActions>
                     <Trigger.ExitActions>
                         <BeginStoryboard>
-                            <Storyboard>
+                            <Storyboard Freezable="True">
                                 <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1" Duration="0:0:0.15" />
                                 <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1" Duration="0:0:0.15" />
                                 <ColorAnimation Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" To="{DynamicResource TextFillColorSecondary}" Duration="0:0:0.15" />
@@ -87,7 +87,7 @@
                 <Trigger Property="IsMouseOver" Value="True">
                     <Trigger.EnterActions>
                         <BeginStoryboard>
-                            <Storyboard>
+                            <Storyboard Freezable="True">
                                 <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1.02" Duration="0:0:0.15" />
                                 <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1.02" Duration="0:0:0.15" />
                             </Storyboard>
@@ -95,7 +95,7 @@
                     </Trigger.EnterActions>
                     <Trigger.ExitActions>
                         <BeginStoryboard>
-                            <Storyboard>
+                            <Storyboard Freezable="True">
                                 <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1" Duration="0:0:0.15" />
                                 <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1" Duration="0:0:0.15" />
                             </Storyboard>
@@ -133,7 +133,7 @@
                             <Trigger Property="IsMouseOver" Value="True">
                                 <Trigger.EnterActions>
                                     <BeginStoryboard>
-                                        <Storyboard>
+                                        <Storyboard Freezable="True">
                                             <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1.1" Duration="0:0:0.2"/>
                                             <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1.1" Duration="0:0:0.2"/>
                                         </Storyboard>
@@ -141,7 +141,7 @@
                                 </Trigger.EnterActions>
                                 <Trigger.ExitActions>
                                     <BeginStoryboard>
-                                        <Storyboard>
+                                        <Storyboard Freezable="True">
                                             <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1" Duration="0:0:0.2"/>
                                             <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1" Duration="0:0:0.2"/>
                                         </Storyboard>
