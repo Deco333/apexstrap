@@ -103,7 +103,7 @@
                             <Setter TargetName="ContentPresenterBorder" Property="BorderThickness" Value="0,1,0,0" />
                             <Trigger.EnterActions>
                                 <BeginStoryboard>
-                                    <Storyboard>
+                                    <Storyboard Freezable="True">
                                         <DoubleAnimation
                                             Storyboard.TargetName="ContentPresenterBorder"
                                             Storyboard.TargetProperty="(Border.LayoutTransform).(ScaleTransform.ScaleY)"
@@ -121,7 +121,7 @@
                             </Trigger.EnterActions>
                             <Trigger.ExitActions>
                                 <BeginStoryboard>
-                                    <Storyboard>
+                                    <Storyboard Freezable="True">
                                         <DoubleAnimation
                                             Storyboard.TargetName="ContentPresenterBorder"
                                             Storyboard.TargetProperty="(Border.LayoutTransform).(ScaleTransform.ScaleY)"

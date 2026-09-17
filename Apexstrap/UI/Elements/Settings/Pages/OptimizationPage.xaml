@@ -1,0 +1,80 @@
+<ui:UiPage x:Class="Apexstrap.UI.Elements.Settings.Pages.OptimizationPage"
+      x:Name="OptimizationPageView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+      xmlns:models="clr-namespace:Apexstrap.UI.ViewModels"
+      xmlns:controls="clr-namespace:Apexstrap.UI.Elements.Controls"
+      xmlns:resources="clr-namespace:Apexstrap.Resources"
+      mc:Ignorable="d"
+      d:DesignHeight="1080" d:DesignWidth="800"
+      Title="OptimizationPage"
+      Scrollable="True">
+    <StackPanel Margin="0,0,14,14">
+        <TextBlock Text="{x:Static resources:Strings.Menu_Optimization_Description}" FontSize="14" Foreground="{DynamicResource TextFillColorSecondaryBrush}" />
+
+        <TextBlock Text="{x:Static resources:Strings.Menu_Optimization_Network_Title}" FontSize="20" FontWeight="Medium" Margin="0,16,0,0" />
+        
+        <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_Optimization_PingBoost_Title}" 
+            Description="{x:Static resources:Strings.Menu_Optimization_PingBoost_Description}">
+            <ui:ToggleSwitch IsChecked="{Binding PingBoostEnabled, Mode=TwoWay}" />
+        </controls:OptionControl>
+
+        <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_Optimization_DisableTelemetry_Title}" 
+            Description="{x:Static resources:Strings.Menu_Optimization_DisableTelemetry_Description}">
+            <ui:ToggleSwitch IsChecked="{Binding TelemetryDisabled, Mode=TwoWay}" />
+        </controls:OptionControl>
+
+        <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_Optimization_NetworkThrottling_Title}" 
+            Description="{x:Static resources:Strings.Menu_Optimization_NetworkThrottling_Description}">
+            <ui:ToggleSwitch IsChecked="{Binding NetworkThrottlingDisabled, Mode=TwoWay}" />
+        </controls:OptionControl>
+
+        <TextBlock Text="{x:Static resources:Strings.Menu_Optimization_Performance_Title}" FontSize="20" FontWeight="Medium" Margin="0,16,0,0" />
+        
+        <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_Optimization_HighPriority_Title}" 
+            Description="{x:Static resources:Strings.Menu_Optimization_HighPriority_Description}">
+            <ui:ToggleSwitch IsChecked="{Binding HighPriorityEnabled, Mode=TwoWay}" />
+        </controls:OptionControl>
+
+        <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_Optimization_GameMode_Title}" 
+            Description="{x:Static resources:Strings.Menu_Optimization_GameMode_Description}">
+            <ui:ToggleSwitch IsChecked="{Binding GameModeEnabled, Mode=TwoWay}" />
+        </controls:OptionControl>
+
+        <TextBlock Text="{x:Static resources:Strings.Menu_Optimization_CPU_Title}" FontSize="20" FontWeight="Medium" Margin="0,16,0,0" />
+        
+        <controls:OptionControl 
+            Header="{x:Static resources:Strings.Menu_Optimization_CoreAffinity_Title}" 
+            Description="{x:Static resources:Strings.Menu_Optimization_CoreAffinity_Description}">
+            <StackPanel Orientation="Horizontal">
+                <ui:ToggleSwitch IsChecked="{Binding CoreAffinityEnabled, Mode=TwoWay}" Margin="0,0,16,0" />
+                <ComboBox MinWidth="150" SelectedIndex="{Binding SelectedCoreCount, Mode=TwoWay}" IsEnabled="{Binding CoreAffinityEnabled, Mode=OneWay}">
+                    <ComboBoxItem Content="All Cores" />
+                    <ComboBoxItem Content="2 Cores" />
+                    <ComboBoxItem Content="4 Cores" />
+                    <ComboBoxItem Content="6 Cores" />
+                    <ComboBoxItem Content="8 Cores" />
+                </ComboBox>
+            </StackPanel>
+        </controls:OptionControl>
+
+        <Grid Margin="0,16,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Text="{x:Static resources:Strings.Menu_Optimization_Warning}" TextWrapping="Wrap" Foreground="{DynamicResource SystemFillColorWarningBrush}" VerticalAlignment="Center" />
+            <ui:Button Grid.Column="1" Content="{x:Static resources:Strings.Common_Apply}" Appearance="Primary" Margin="0,0,8,0" Command="{Binding ApplyOptimizationsCommand, Mode=OneWay}" />
+            <ui:Button Grid.Column="2" Content="{x:Static resources:Strings.Common_Reset}" Appearance="Danger" Command="{Binding ResetOptimizationsCommand, Mode=OneWay}" />
+        </Grid>
+    </StackPanel>
+</ui:UiPage>

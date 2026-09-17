@@ -739,7 +739,7 @@ Selecting 'No' will ignore this warning and continue installation.</value>
     <value>Settings saved!</value>
   </data>
   <data name="Menu.Title" xml:space="preserve">
-    <value>Bloxstrap Settings</value>
+    <value>Apexstrap Settings - Kids win Server Edition</value>
   </data>
   <data name="Dialog.LanguageSelector.Header" xml:space="preserve">
     <value>Choose preferred language</value>
@@ -1385,5 +1385,128 @@ Defaulting to {1}.</value>
   </data>
   <data name="Menu.FastFlagEditor.AllowlistInformation" xml:space="preserve">
     <value>Due to the [Fast Flag allowlist update]({0}), most custom Fast Flags will have no effect on the Roblox player.</value>
+  </data>
+  <data name="Menu.DiscordRPC.Title" xml:space="preserve">
+    <value>Discord RPC</value>
+  </data>
+  <data name="Menu.DiscordRPC.Description" xml:space="preserve">
+    <value>Customize your Discord Rich Presence for Roblox. Created by Deco.</value>
+  </data>
+  <data name="Menu.DiscordRPC.General.Title" xml:space="preserve">
+    <value>General Settings</value>
+  </data>
+  <data name="Menu.DiscordRPC.Enable.Title" xml:space="preserve">
+    <value>Enable Discord RPC</value>
+  </data>
+  <data name="Menu.DiscordRPC.Enable.Description" xml:space="preserve">
+    <value>Show your current Roblox activity on Discord</value>
+  </data>
+  <data name="Menu.DiscordRPC.ShowDetails.Title" xml:space="preserve">
+    <value>Show Game Details</value>
+  </data>
+  <data name="Menu.DiscordRPC.ShowDetails.Description" xml:space="preserve">
+    <value>Display detailed information about the game you're playing</value>
+  </data>
+  <data name="Menu.DiscordRPC.Customization.Title" xml:space="preserve">
+    <value>Appearance Customization</value>
+  </data>
+  <data name="Menu.DiscordRPC.ApplicationId.Title" xml:space="preserve">
+    <value>Application ID</value>
+  </data>
+  <data name="Menu.DiscordRPC.LargeImageKey.Title" xml:space="preserve">
+    <value>Large Image Key</value>
+  </data>
+  <data name="Menu.DiscordRPC.LargeImageText.Title" xml:space="preserve">
+    <value>Large Image Text</value>
+  </data>
+  <data name="Menu.DiscordRPC.SmallImageKey.Title" xml:space="preserve">
+    <value>Small Image Key</value>
+  </data>
+  <data name="Menu.DiscordRPC.SmallImageText.Title" xml:space="preserve">
+    <value>Small Image Text</value>
+  </data>
+  <data name="Menu.DiscordRPC.ButtonConfiguration.Title" xml:space="preserve">
+    <value>Button Configuration</value>
+  </data>
+  <data name="Menu.DiscordRPC.Button1.Label.Title" xml:space="preserve">
+    <value>Button 1 Label</value>
+  </data>
+  <data name="Menu.DiscordRPC.Button1.Url.Title" xml:space="preserve">
+    <value>Button 1 URL</value>
+  </data>
+  <data name="Menu.DiscordRPC.Button2.Label.Title" xml:space="preserve">
+    <value>Button 2 Label</value>
+  </data>
+  <data name="Menu.DiscordRPC.Button2.Url.Title" xml:space="preserve">
+    <value>Button 2 URL</value>
+  </data>
+  <data name="Menu.DiscordRPC.PresenceText.Title" xml:space="preserve">
+    <value>Presence Text</value>
+  </data>
+  <data name="Menu.DiscordRPC.State.Title" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="Menu.DiscordRPC.Details.Title" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="Menu.Optimization.Title" xml:space="preserve">
+    <value>Optimization</value>
+  </data>
+  <data name="Menu.Optimization.Description" xml:space="preserve">
+    <value>Optimize Roblox performance and network settings. Special version for Kids win server by Deco.</value>
+  </data>
+  <data name="Menu.Optimization.Network.Title" xml:space="preserve">
+    <value>Network Optimization</value>
+  </data>
+  <data name="Menu.Optimization.PingBoost.Title" xml:space="preserve">
+    <value>Ping Boost</value>
+  </data>
+  <data name="Menu.Optimization.PingBoost.Description" xml:space="preserve">
+    <value>Optimize network settings to reduce ping</value>
+  </data>
+  <data name="Menu.Optimization.DisableTelemetry.Title" xml:space="preserve">
+    <value>Disable Telemetry</value>
+  </data>
+  <data name="Menu.Optimization.DisableTelemetry.Description" xml:space="preserve">
+    <value>Disable Roblox telemetry and data collection</value>
+  </data>
+  <data name="Menu.Optimization.NetworkThrottling.Title" xml:space="preserve">
+    <value>Disable Network Throttling</value>
+  </data>
+  <data name="Menu.Optimization.NetworkThrottling.Description" xml:space="preserve">
+    <value>Remove Windows network throttling limits</value>
+  </data>
+  <data name="Menu.Optimization.Performance.Title" xml:space="preserve">
+    <value>Performance</value>
+  </data>
+  <data name="Menu.Optimization.HighPriority.Title" xml:space="preserve">
+    <value>High Process Priority</value>
+  </data>
+  <data name="Menu.Optimization.HighPriority.Description" xml:space="preserve">
+    <value>Run Roblox with high process priority</value>
+  </data>
+  <data name="Menu.Optimization.GameMode.Title" xml:space="preserve">
+    <value>Game Mode</value>
+  </data>
+  <data name="Menu.Optimization.GameMode.Description" xml:space="preserve">
+    <value>Enable Windows Game Mode for better performance</value>
+  </data>
+  <data name="Menu.Optimization.CPU.Title" xml:space="preserve">
+    <value>CPU Settings</value>
+  </data>
+  <data name="Menu.Optimization.CoreAffinity.Title" xml:space="preserve">
+    <value>Core Affinity</value>
+  </data>
+  <data name="Menu.Optimization.CoreAffinity.Description" xml:space="preserve">
+    <value>Select which CPU cores Roblox should use</value>
+  </data>
+  <data name="Menu.Optimization.Warning" xml:space="preserve">
+    <value>Warning: Some optimizations may cause instability. Use at your own risk.</value>
+  </data>
+  <data name="Common.Apply" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="Common.Save" xml:space="preserve">
+    <value>Save</value>
   </data>
 </root>
