@@ -1,11 +1,16 @@
-```
-# Build artifacts
+# Icons and resources
+*.ico
+
+# Build outputs
 bin/
 obj/
+Debug/
+Release/
+x64/
+x86/
 *.exe
 *.dll
 *.pdb
-*.nupkg
 *.userprefs
 *.cache
 *.suo
