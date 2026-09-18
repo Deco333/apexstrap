@@ -1,39 +1,33 @@
-# Icons and resources
-*.ico
-
-# Build outputs
+```
+# Build artifacts
 bin/
 obj/
-Debug/
-Release/
-x64/
-x86/
 *.exe
 *.dll
 *.pdb
-*.userprefs
+*.nupkg
 
 # Dependencies
 packages/
+node_modules/
 
 # Logs
 *.log
 
-# Temp files
-*.tmp
-*.temp
+# Environment
+.env
+.env.local
+*.env.*
 
-# User-specific files
-*.user
+# Editors
+.vscode/
+.idea/
 *.suo
-.vs/
-.userprefs
+*.user
+*.userosscache
+*.sln.docstates
 
 # OS generated files
 .DS_Store
 Thumbs.db
-desktop.ini
-
-# Configuration files that might contain secrets
-.config/dotnet-tools.json
-publish/
+```
