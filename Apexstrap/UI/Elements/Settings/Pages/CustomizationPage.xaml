@@ -1,0 +1,76 @@
+<ui:UiPage
+    x:Class="Apexstrap.UI.Elements.Settings.Pages.CustomizationPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+    xmlns:local="clr-namespace:Apexstrap.UI.Elements.Settings.Pages"
+    mc:Ignorable="d"
+    d:DesignHeight="800" d:DesignWidth="900"
+    Title="CustomizationPage">
+
+    <Grid Margin="20">
+        <StackPanel Spacing="20">
+            <!-- Header -->
+            <TextBlock Text="Appearance & Theme" FontSize="24" FontWeight="Bold" Margin="0,0,0,10"/>
+            
+            <!-- Accent Color -->
+            <ui:CardExpander Icon="Palette24" Header="Accent Color" IsExpanded="True">
+                <StackPanel Spacing="15" Margin="0,10,0,0">
+                    <TextBlock Text="Choose your primary brand color:"/>
+                    <WrapPanel ItemWidth="50" ItemHeight="50">
+                        <Button Click="ColorButton_Click" Tag="#0078D4" Background="#0078D4" Margin="5" Width="40" Height="40" CornerRadius="20"/>
+                        <Button Click="ColorButton_Click" Tag="#E81123" Background="#E81123" Margin="5" Width="40" Height="40" CornerRadius="20"/>
+                        <Button Click="ColorButton_Click" Tag="#00CC6A" Background="#00CC6A" Margin="5" Width="40" Height="40" CornerRadius="20"/>
+                        <Button Click="ColorButton_Click" Tag="#FFB900" Background="#FFB900" Margin="5" Width="40" Height="40" CornerRadius="20"/>
+                        <Button Click="ColorButton_Click" Tag="#881798" Background="#881798" Margin="5" Width="40" Height="40" CornerRadius="20"/>
+                        <Button Click="ColorButton_Click" Tag="#0099BC" Background="#0099BC" Margin="5" Width="40" Height="40" CornerRadius="20"/>
+                        <Button Click="ColorButton_Click" Tag="#FF4343" Background="#FF4343" Margin="5" Width="40" Height="40" CornerRadius="20"/>
+                        <Button Click="ColorButton_Click" Tag="#7FBA00" Background="#7FBA00" Margin="5" Width="40" Height="40" CornerRadius="20"/>
+                    </WrapPanel>
+                </StackPanel>
+            </ui:CardExpander>
+
+            <!-- Theme Mode -->
+            <ui:CardExpander Icon="DarkTheme24" Header="Application Theme" IsExpanded="True">
+                <StackPanel Spacing="15" Margin="0,10,0,0">
+                    <RadioButton Content="Light" GroupName="AppTheme" Checked="ThemeRadio_Checked" Tag="Light"/>
+                    <RadioButton Content="Dark" GroupName="AppTheme" Checked="ThemeRadio_Checked" Tag="Dark" IsChecked="True"/>
+                    <RadioButton Content="System Default" GroupName="AppTheme" Checked="ThemeRadio_Checked" Tag="System"/>
+                    <CheckBox Content="Enable Mica/Acrylic Effect (Transparent Background)" IsChecked="True" Checked="Mica_Checked" Unchecked="Mica_Unchecked"/>
+                </StackPanel>
+            </ui:CardExpander>
+
+            <!-- Custom Assets -->
+            <ui:CardExpander Icon="Image24" Header="Custom Assets (Icons & Logos)" IsExpanded="True">
+                <StackPanel Spacing="15" Margin="0,10,0,0">
+                    <Grid ColumnDefinitions="Auto,*,Auto" RowDefinitions="Auto,Auto,Auto" ColumnSpacing="10" RowSpacing="10">
+                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Window Icon (.ico):" VerticalAlignment="Center"/>
+                        <TextBox Grid.Row="0" Grid.Column="1" x:Name="IconPathBox" IsReadOnly="True"/>
+                        <Button Grid.Row="0" Grid.Column="2" Content="Browse" Click="BrowseIcon_Click"/>
+
+                        <TextBlock Grid.Row="1" Grid.Column="0" Text="Main Logo (.png):" VerticalAlignment="Center"/>
+                        <TextBox Grid.Row="1" Grid.Column="1" x:Name="LogoPathBox" IsReadOnly="True"/>
+                        <Button Grid.Row="1" Grid.Column="2" Content="Browse" Click="BrowseLogo_Click"/>
+                        
+                        <Button Grid.Row="2" Grid.Column="2" Content="Reset to Default" HorizontalAlignment="Right" Click="ResetAssets_Click"/>
+                    </Grid>
+                </StackPanel>
+            </ui:CardExpander>
+            
+            <!-- Preview -->
+            <ui:Card ControlPadding="20">
+                <StackPanel>
+                    <TextBlock Text="Live Preview" FontWeight="Bold" Margin="0,0,0,10"/>
+                    <Border Background="{DynamicResource ApplicationBackgroundBrush}" Height="100" CornerRadius="8" BorderBrush="{DynamicResource TextFillColorPrimaryBrush}">
+                        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <TextBlock Text="Apexstrap" FontSize="24" FontWeight="Bold" Foreground="{DynamicResource TextFillColorPrimaryBrush}"/>
+                            <TextBlock Text="Kids win Server Edition" FontSize="14" Foreground="{DynamicResource TextFillColorSecondaryBrush}"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </ui:Card>
+        </StackPanel>
+    </Grid>
+</ui:UiPage>

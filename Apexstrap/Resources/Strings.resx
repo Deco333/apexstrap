@@ -1503,6 +1503,18 @@ Defaulting to {1}.</value>
   <data name="Menu.Optimization.Warning" xml:space="preserve">
     <value>Warning: Some optimizations may cause instability. Use at your own risk.</value>
   </data>
+  <data name="Menu.Customization.Title" xml:space="preserve">
+    <value>Customization</value>
+  </data>
+  <data name="Menu.Customization.Description" xml:space="preserve">
+    <value>Customize the appearance of Apexstrap. Change colors, themes, icons and logos.</value>
+  </data>
+  <data name="Menu.VersionSelector.Title" xml:space="preserve">
+    <value>Version Manager</value>
+  </data>
+  <data name="Menu.VersionSelector.Description" xml:space="preserve">
+    <value>Manage Roblox versions. Select which version to launch or download missing ones automatically.</value>
+  </data>
   <data name="Common.Apply" xml:space="preserve">
     <value>Apply</value>
   </data>
